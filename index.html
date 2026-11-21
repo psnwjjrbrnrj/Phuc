@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tải Video TikTok Không Logo - Hoàng Phúc Yêu Hải Yến</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <i class="fa-solid fa-heart"></i>
+          <span>TikTok Downloader</span>
+        </div>
+        <div class="brand-name">Hoàng Phúc Yêu Hải Yến</div>
+        <p class="subtitle">Tải video TikTok không logo Full HD & MP3 siêu tốc</p>
+      </div>
+
+      <div class="main-content">
+        <div class="input-group">
+          <div class="input-wrapper">
+            <i class="fa-solid fa-link"></i>
+            <input type="text" id="urlInput" placeholder="Dán link video TikTok vào đây...">
+          </div>
+          <button class="btn-secondary" id="pasteBtn">
+            <i class="fa-solid fa-paste"></i> Dán
+          </button>
+        </div>
+
+        <button class="btn-primary" id="downloadBtn">
+          <i class="fa-solid fa-download"></i> Tải Video Ngay
+        </button>
+
+        <!-- Trạng thái đang tải -->
+        <div id="loadingSection" class="loading hidden">
+          <div class="spinner"></div>
+          <p id="loadingText">Đang kết nối tới máy chủ TikTok...</p>
+        </div>
+
+        <!-- Thông báo lỗi -->
+        <div id="errorSection" class="error-msg hidden">
+          <span id="errorText">Có lỗi xảy ra, vui lòng thử lại!</span>
+        </div>
+
+        <!-- Kết quả video -->
+        <div id="resultSection" class="result-card hidden">
+          <div class="author-info">
+            <img id="authorAvatar" src="" alt="Avatar">
+            <span id="authorName">Tên tác giả</span>
+          </div>
+          <p id="videoDesc" class="video-desc">Mô tả video...</p>
+          <div class="action-buttons">
+            <a id="downloadHdBtn" href="#" class="btn-download hd" target="_blank">
+              <i class="fa-solid fa-video"></i> Tải Không Logo (Full HD)
+            </a>
+            <a id="downloadAudioBtn" href="#" class="btn-download audio" target="_blank">
+              <i class="fa-solid fa-music"></i> Tải Nhạc Nền (MP3)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© 2024 <strong>Hoàng Phúc Yêu Hải Yến</strong>. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
